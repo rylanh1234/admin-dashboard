@@ -7,7 +7,7 @@
 
 body {
     display: grid;
-    grid-template: 1fr 4fr / 1fr 4fr;
+    grid-template: 20vh 80vh / 1fr 4fr;
 }
 
 .icon {
@@ -15,17 +15,78 @@ body {
     height: 25px;
 }
 
+.notification button,
+.card-more button{
+    width: 25px;
+    height: 25px;
+}
+
+#share img {
+    rotate: -90deg;
+}
+
 .header {
-    padding: 50px;
+    padding: 25px 50px;
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 20%);
 }
 
-.notification button,
-.card-more button {
-    width: 25px;
-    height: 25px;
+.row-one {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.searchbar {
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    gap: 25px;
+}
+
+.small-user-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.row-one-container {
+    display: grid;
+    grid-template-columns: 25px 50px 1fr;
+    gap: 30px;
+    padding-left: 125px;
+    align-items: center;
+}
+
+.header input {
+    width: 100%;
+}
+
+.row-two {
+    display: grid;
+    grid-template-columns:1fr 4fr 3fr;
+    align-items: center;
+}
+
+.large-user-icon {
+    width: 80px;
+    height: 80px;
+    grid-column: 1 / 2;
+}
+
+.small-user-icon,
+.large-user-icon {
+    background-color: #ffd000;
+    border-radius: 50%;
+}
+
+.welcome {
+    grid-column: 2 / 3;
+}
+
+.options {
+    grid-column: 3 / 4;
 }
 
 .sidebar {
@@ -35,5 +96,6 @@ body {
 }
 
 .main {
+    margin-top: 25px;
     grid-area: 2 / 2 / 3 / 3;
 }

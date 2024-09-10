@@ -90,7 +90,7 @@ body {
 }
 
 .sidebar {
-    padding: 50px;
+    padding: 20px;
     grid-area: 1 / 1 / 3 / 2;
     background-color: #0ea5e9;
     display: grid;
@@ -99,9 +99,13 @@ body {
     font-weight: bold;
 }
 
-img {
-    fill: white;
-    stroke: white;
+.dashboard-logo {
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    align-items: center;
+    gap: 30px;
+    align-self: start;
+    font-size: 24px;
 }
 
 .dashboard-logo img{
@@ -109,8 +113,24 @@ img {
     height: 65px;
 }
 
+.menu li,
+.menu-other li {
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    gap: 30px;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.menu-other {
+    margin-top: -20vh;
+}
+
 .sidebar ul {
     list-style: none;
+    display: grid;
+    gap: 20px;
 }
 
 .main {
